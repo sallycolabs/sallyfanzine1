@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html  lang="es">
   <head>
     <meta charset="utf-8">
     <title>Sally Fanzine Edición #1</title>
@@ -32,13 +32,19 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active"  data-interval="0">
-                  <img src="img/p1.png" class="d-block w-100" alt="...">
+                  <img src="img/p1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="0">
-                  <img src="img/p2.png" class="d-block w-100" alt="...">
+                  <img src="img/p2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="0">
-                  <img src="img/p3.png" class="d-block w-100" alt="...">
+                  <img src="img/p3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="0">
+                  <img src="img/p4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="0">
+                  <img src="img/p5.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
               <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -54,7 +60,7 @@
           </div> 
       </div>
       
-      <div class="" style="text-align:right">
+      <div class="" style="text-align:center">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
           <strong>¡Hola Todos!</strong>  Agradecemos su participacion.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -76,8 +82,17 @@
 
       <script>
           $('.carousel').carousel({
-  interval: 10000
-})
+  interval: 8000
+});
+
+window.sr = ScrollReveal();
+sr.reveal('.header-image', {
+      duration: 4000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
       </script>
 
 </body>
